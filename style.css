@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+  transition: all 0.5s ease;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  background: rgba(0, 0, 0, 0.925);
+  color: white;
+}
+.grid-center {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.title {
+  font-size: 5rem;
+}
+.subtitle {
+  text-align: right;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.dash {
+  font-size: 3rem;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  margin: 1rem auto;
+  width: 100%;
+  font-size: 2rem;
+}
