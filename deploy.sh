@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 git add -A
-git commit -m 'update'
+git commit -m 'Update my own website deployed on github'
 #git commit -a -m 'update'
 
 eval `ssh-agent`
