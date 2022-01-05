@@ -1,0 +1,10 @@
+{
+  "life": [
+    "//Life",
+    "void new_day(){",
+    "eating();",
+    "coding();",
+    "sleeping();",
+    "}"
+  ]
+}

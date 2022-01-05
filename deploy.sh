@@ -25,6 +25,8 @@ cd dist
 
 git init
 
+git branch -m gh-pages
+
 git add -A
 
 git commit -m 'deploy'
