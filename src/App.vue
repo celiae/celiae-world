@@ -3,6 +3,7 @@
   <section class="vh-100">
     <Logo />
     <Collapse title="这是什么" :codemsg="life" />
+asdfjkasld;
   </section>
   <section class="vh-100">
     <Title msg="BLOG"></Title>
