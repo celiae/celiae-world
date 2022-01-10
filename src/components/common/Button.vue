@@ -1,5 +1,9 @@
 <template>
-  <button data-aos="flip-up" :class="buttonStyle" class="btn btn-light fs-3 p-2">
+  <button
+    data-aos="flip-up"
+    :class="buttonStyle"
+    class="btn btn-light fs-3 p-2"
+  >
     <span>{{ msg }}</span>
     <span class="m-2"
       ><font-awesome-icon class="align-middle fs-1" :icon="icon"

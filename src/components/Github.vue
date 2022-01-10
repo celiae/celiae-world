@@ -20,20 +20,21 @@ export default defineComponent({
     return {
       cards: [
         {
-          imgPath: "",
+          imgPath: "@/assets/logo.svg",
           title: "Celiae Space",
           content: "喜欢搞搞",
           linkText: "GO",
           link: "https://github.com/celiae/celiae.github.io",
         },
         {
-          imgPath: "",
+          imgPath: "@/assets/blog/Github.svg",
           title: "JSP hr",
           content: "主人的任务",
           linkText: "GO",
           link: "https://github.com/celiae/JSP-",
         },
         {
+          //error with imgPath
           imgPath: "",
           title: "Algorithm",
           content: "额,这是什么",

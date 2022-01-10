@@ -3,9 +3,12 @@
 </template>
 
 <style lang="scss" scoped>
-@media screen and (min-width: 1000px) {
+img {
+  cursor: pointer;
+}
+@media screen and (min-width: 765px) {
   img {
-    width: 60rem;
+    width: 30rem;
   }
 }
 </style>

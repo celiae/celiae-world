@@ -1,7 +1,7 @@
 <template>
   <div
     id="carouselExampleCaptions"
-    class="carousel slide"
+    class="carousel slide m-auto"
     data-bs-ride="carousel"
     data-aos="zoom-in"
   >
@@ -30,24 +30,12 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="@/assets/blog/Linux.svg" class="d-block w-100" alt="" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-info fs-1">Linux</h5>
-          <p>进入开源世界</p>
-        </div>
       </div>
       <div class="carousel-item">
         <img src="@/assets/blog/Nginx.svg" class="d-block w-100" alt="" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-info fs-1">Nginx</h5>
-          <p>市场份额最大的Web server</p>
-        </div>
       </div>
       <div class="carousel-item">
         <img src="@/assets/blog/Github.svg" class="d-block w-100" alt="" />
-        <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-info fs-1">Github</h5>
-          <p>在开发者当中广为人知的代码托管平台</p>
-        </div>
       </div>
     </div>
     <button
@@ -81,10 +69,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 765px) {
   .carousel {
-    width: 50%;
-    margin: auto;
+    width: 30rem;
   }
 }
 </style>

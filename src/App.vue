@@ -1,73 +1,70 @@
 <template>
   <Header></Header>
   <section class="vh-100">
-
+    <Heros></Heros>
+    <font-awesome-icon
+      class="align-middle fs-1 text-dark"
+      :icon="['fab', 'twitter']"
+    />
+    <font-awesome-icon
+      class="align-middle fs-1 text-dark"
+      :icon="['fab', 'telegram']"
+    />
   </section>
-  <section class="vh-100">
-    <Title msg="BLOG"></Title>
+  <section id="ceblog" class="vh-100">
+    <Title msg="BLOG" :icon="['fab', 'blogger-b']"></Title>
     <Carousel></Carousel>
-    <Shell :msg="ceblog"></Shell>
-    <Button msg="GO" buttonStyle="bubble1" :icon="blogIcon"></Button>
+    <Shell :msg="ceblog.gclone"></Shell>
+    <Button msg="GO" buttonStyle="bubble1" :icon="ceblog.icon"></Button>
   </section>
-  <section class="vh-100">
-    <Title msg="Github"></Title>
+  <section id="github" class="min-vh-100">
+    <Title msg="Github" :icon="['fab', 'github-square']"></Title>
     <Github></Github>
-    <Shell :msg="github"></Shell>
-    <Button msg="GO" buttonStyle="bubble2" :icon="githubIcon"></Button>
+    <Shell :msg="github.gclone"></Shell>
+    <Button msg="GO" buttonStyle="bubble2" :icon="github.icon"></Button>
   </section>
   <Footer></Footer>
 </template>
 
 <script lang="ts">
-import Header from "@/components/common/Header.vue";
 import Button from "@/components/common/Button.vue";
 import Code from "@/components/common/Code.vue";
 import Shell from "@/components/common/Shell.vue";
 import Logo from "@/components/common/Logo.vue";
 import Title from "@/components/common/Title.vue";
 import Carousel from "@/components/common/Carousel.vue";
-import Collapse from "@/components/common/Collapse.vue";
-import Footer from "@/components/common/Footer.vue";
 
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 import Github from "@/components/Github.vue";
+import Heros from "@/components/Heros.vue";
 
 export default {
   name: "App",
   data() {
     return {
-      show: true,
-      life: [
-        "//Life",
-        "void new_day(){",
-        "eating();",
-        "coding();",
-        "sleeping();",
-        "new_day();",
-        "}",
-      ],
-      ceblog: "git clone https://github.com/celiae/ceblog",
-      blogIcon: ["fas", "blog"],
-      githubIcon: ["fab", "github"],
-      github: "git clone https://github.com/celiae/celiae.github.io",
+      ceblog: {
+        gclone: "git clone https://github.com/celiae/ceblog",
+        icon: ["fas", "blog"],
+      },
+      github: {
+        gclone: "git clone https://github.com/celiae/celiae.github.io",
+        icon: ["fab", "github"],
+      },
     };
   },
   components: {
-    Header,
     Button,
     Code,
     Shell,
     Logo,
     Title,
     Carousel,
-    Collapse,
-    Footer,
 
     Github,
-  },
-  methods: {
-    showCode() {
-      console.log("asdf");
-    },
+    Heros,
+    Footer,
+    Header,
   },
 };
 </script>
@@ -79,6 +76,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 </style>
