@@ -14,21 +14,18 @@
 
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-light">
         <li class="ms-3">
-          <a class="text-muted" href="#">
+          <a class="text-muted" href="https://twitter.com/ceeliatt">
             <font-awesome-icon
               class="align-middle fs-1"
               :icon="['fab', 'twitter']"
           /></a>
         </li>
         <li class="ms-3">
-          <a class="text-muted" href="#"
+          <a class="text-muted" href="https://t.me/celiaetg"
             ><font-awesome-icon
               class="align-middle fs-1"
               :icon="['fab', 'telegram-plane']"
           /></a>
-        </li>
-        <li class="ms-3">
-          <a class="text-muted" href="#"></a>
         </li>
       </ul>
     </footer>

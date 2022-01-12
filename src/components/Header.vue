@@ -22,14 +22,14 @@
 
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a href="#" class="nav-link active" aria-current="page"
+          <a href="https://celiae.github.io/ceblog/" class="nav-link active" aria-current="page"
             >blog<font-awesome-icon
               class="align-middle fs-1 ms-2"
               :icon="['fas', 'blog']"
           /></a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link border-bottom border-info"
+          <a href="https://github.com/celiae" class="nav-link border-bottom border-info"
             >github<font-awesome-icon
               class="align-middle fs-1 ms-2"
               :icon="['fab', 'github-alt']"
