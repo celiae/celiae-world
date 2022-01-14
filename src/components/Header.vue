@@ -1,6 +1,5 @@
 <template>
   <div
-    data-aos="zoom-in"
     class="container position-sticky top-0 fs-3 bg-light bg-opacity-75 text-dark"
   >
     <header
@@ -10,26 +9,30 @@
       <a
         href="/"
         class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
-        ><span
+        ><span></span>
+        <span id="webTitle"
           ><font-awesome-icon
-            class="align-middle fs-1 me-2"
+            class="align-middle fs-1 ms-2"
             :icon="['fas', 'angry']"
-        /></span>
-        <span id="webTitle" style="transition: all 0.5s ease"
-          >Celiae Space</span
+          />Celiae Space</span
         >
       </a>
 
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a href="https://celiae.github.io/ceblog/" class="nav-link active" aria-current="page"
-            >blog<font-awesome-icon
-              class="align-middle fs-1 ms-2"
+          <a
+            href="https://celiae.github.io/ceblog"
+            class="nav-link active"
+            aria-current="page"
+            ><font-awesome-icon
+              class="align-middle fs-1 me-2"
               :icon="['fas', 'blog']"
-          /></a>
+          />Ceblog</a>
         </li>
         <li class="nav-item">
-          <a href="https://github.com/celiae" class="nav-link border-bottom border-info"
+          <a
+            href="https://github.com/celiae"
+            class="nav-link border-bottom border-info"
             >github<font-awesome-icon
               class="align-middle fs-1 ms-2"
               :icon="['fab', 'github-alt']"
@@ -68,10 +71,5 @@ export default defineComponent({
 <style lang="scss" scoped>
 .container {
   z-index: 500;
-}
-header {
-  transition: all 0.5s ease;
-  padding-inline: 2.5rem;
-  font-size: 2.5rem;
 }
 </style>

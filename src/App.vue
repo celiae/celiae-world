@@ -1,29 +1,23 @@
 <template>
-  <Header></Header>
-  <section class="vh-100">
-    <Heros></Heros>
-    <font-awesome-icon
-      class="align-middle fs-1 text-dark"
-      :icon="['fab', 'twitter']"
-    />
-    <font-awesome-icon
-      class="align-middle fs-1 text-dark"
-      :icon="['fab', 'telegram']"
-    />
-  </section>
-  <section id="ceblog" class="vh-100">
-    <Title msg="BLOG" :icon="['fab', 'blogger-b']"></Title>
-    <Carousel></Carousel>
-    <Shell :msg="ceblog.gclone"></Shell>
-    <Button msg="GO" buttonStyle="bubble1" :icon="ceblog.icon"></Button>
-  </section>
-  <section id="github" class="min-vh-100">
-    <Title msg="Github" :icon="['fab', 'github-square']"></Title>
-    <Github></Github>
-    <Shell :msg="github.gclone"></Shell>
-    <Button msg="GO" buttonStyle="bubble2" :icon="github.icon"></Button>
-  </section>
-  <Footer></Footer>
+  <div class="bg-dark">
+    <Header></Header>
+    <section id="celiae" class="vh-100">
+      <Heros></Heros>
+    </section>
+    <section id="ceblog" class="vh-100">
+      <Title msg="BLOG" :icon="['fab', 'blogger-b']"></Title>
+      <Carousel></Carousel>
+      <Shell :msg="ceblog.gclone"></Shell>
+      <Button msg="GO" buttonStyle="bubble1" :icon="ceblog.icon"></Button>
+    </section>
+    <section id="github" class="min-vh-100">
+      <Title msg="Github" :icon="['fab', 'github-square']"></Title>
+      <Github></Github>
+      <Shell :msg="github.gclone"></Shell>
+      <Button msg="GO" buttonStyle="bubble2" :icon="github.icon"></Button>
+    </section>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script lang="ts">
@@ -70,11 +64,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/sass/main.scss";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+}
+html {
+  scroll-behavior: smooth;
 }
 </style>
