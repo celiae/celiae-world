@@ -8,13 +8,23 @@
       <Title msg="BLOG" :icon="['fab', 'blogger-b']"></Title>
       <Carousel></Carousel>
       <Shell :msg="ceblog.gclone"></Shell>
-      <Button msg="GO" buttonStyle="bubble1" :icon="ceblog.icon"></Button>
+      <Button
+        msg="GO"
+        buttonStyle="bubble1"
+        :icon="ceblog.icon"
+        :url="ceblog.url"
+      ></Button>
     </section>
     <section id="github" class="min-vh-100">
       <Title msg="Github" :icon="['fab', 'github-square']"></Title>
       <Github></Github>
       <Shell :msg="github.gclone"></Shell>
-      <Button msg="GO" buttonStyle="bubble2" :icon="github.icon"></Button>
+      <Button
+        msg="GO"
+        buttonStyle="bubble2"
+        :icon="github.icon"
+        :url="github.url"
+      ></Button>
     </section>
     <Footer></Footer>
   </div>
@@ -22,7 +32,6 @@
 
 <script lang="ts">
 import Button from "@/components/common/Button.vue";
-import Code from "@/components/common/Code.vue";
 import Shell from "@/components/common/Shell.vue";
 import Logo from "@/components/common/Logo.vue";
 import Title from "@/components/common/Title.vue";
@@ -40,16 +49,17 @@ export default {
       ceblog: {
         gclone: "git clone https://github.com/celiae/ceblog",
         icon: ["fas", "blog"],
+        url: "https://celiae.github.io/ceblog",
       },
       github: {
         gclone: "git clone https://github.com/celiae/celiae.github.io",
         icon: ["fab", "github"],
+        url: "https://github.com/celiae",
       },
     };
   },
   components: {
     Button,
-    Code,
     Shell,
     Logo,
     Title,

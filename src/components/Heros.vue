@@ -5,20 +5,20 @@
         <Fullnav></Fullnav>
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">
+        <h1 class="display-5 fw-bold lh-1 mb-3 text-info animate__animated animate__bounce animate__infinite">
           {{ heroTitle }}
         </h1>
-        <p class="lead">
+        <p class="lead text-warning animate__animated animate__heartBeat animate__delay-2s">
           {{ heroContent }}
         </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
             <font-awesome-icon
-              class="align-middle fs-1 me-2"
+              class="align-middle fs-1 me-2 animate__animated animate__shakeX"
               :icon="['fab', 'angellist']"
             />行
           </button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4 animate__animated animate__wobble animate__delay-2s">
             Perfect<font-awesome-icon
               class="align-middle fs-1 ms-2"
               :icon="['fas', 'check']"
@@ -37,8 +37,8 @@ import Fullnav from "@/components/Fullnav.vue";
 export default defineComponent({
   data() {
     return {
-      heroTitle: "heroTitle",
-      heroContent: "heroContent",
+      heroTitle: "是是是",
+      heroContent: "你说的都对",
     };
   },
   components: {

@@ -3,6 +3,8 @@
     data-aos="flip-up"
     :class="buttonStyle"
     class="btn btn-light fs-3 p-2"
+    data-bs-toggle="tooltip" data-bs-placement="left" title="这有什么好迟疑的"
+    @click="toSite"
   >
     <span>{{ msg }}</span>
     <span class="m-2"
@@ -10,7 +12,7 @@
     /></span>
   </button>
 </template>
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 
 export default defineComponent({
@@ -18,6 +20,12 @@ export default defineComponent({
     msg: String,
     icon: Array,
     buttonStyle: String,
+    url: String,
+  },
+  methods: {
+    toSite: function () {
+      location.href = this.url;
+    },
   },
 });
 </script>
