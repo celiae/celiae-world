@@ -5,7 +5,7 @@
         <Fullnav></Fullnav>
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3 text-info animate__animated animate__bounce animate__infinite">
+        <h1 class="display-5 fw-bold lh-1 mb-3 text-info animate__animated animate__bounce">
           {{ heroTitle }}
         </h1>
         <p class="lead text-warning animate__animated animate__heartBeat animate__delay-2s">
@@ -26,6 +26,9 @@
           </button>
         </div>
       </div>
+      <div class="col">
+        <img width="200" src="@/assets/images/celiae.jpg" class="img-thumbnail rounded" alt="">
+      </div>
     </div>
   </div>
 </template>
@@ -37,8 +40,8 @@ import Fullnav from "@/components/Fullnav.vue";
 export default defineComponent({
   data() {
     return {
-      heroTitle: "是是是",
-      heroContent: "你说的都对",
+      heroTitle: "山不在高 有仙则名",
+      heroContent: "水不在深 有龙则灵 --刘禹锡",
     };
   },
   components: {

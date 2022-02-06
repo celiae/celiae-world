@@ -26,6 +26,16 @@
         :url="github.url"
       ></Button>
     </section>
+    <section id="wish" class="min-vh-100">
+      <Title msg="希望这世间没有烦恼" :icon="['fas', 'heart']"></Title>
+      <Wish></Wish>
+      <Button
+        msg="GO"
+        buttonStyle="bubble2"
+        :icon="wish.icon"
+        :url="wish.url"
+      ></Button>
+    </section>
     <Footer></Footer>
   </div>
 </template>
@@ -41,6 +51,7 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import Github from "@/components/Github.vue";
 import Heros from "@/components/Heros.vue";
+import Wish from "@/components/Wish.vue";
 
 export default {
   name: "App",
@@ -56,6 +67,9 @@ export default {
         icon: ["fab", "github"],
         url: "https://github.com/celiae",
       },
+      wish:{
+        icon:["fas","hand-holding-heart"]
+      }
     };
   },
   components: {
@@ -69,6 +83,7 @@ export default {
     Heros,
     Footer,
     Header,
+    Wish,
   },
 };
 </script>

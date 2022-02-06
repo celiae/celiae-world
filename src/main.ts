@@ -10,6 +10,9 @@ import {
   faAngry,
   faCheck,
   faTerminal,
+  faHandsWash,
+  faHandHoldingHeart,
+  faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -46,7 +49,9 @@ library.add(
   faGithubAlt,
   faGithubSquare,
   faBloggerB,
-  faTerminal
+  faTerminal,
+  faHandHoldingHeart,
+  faHeart
 );
 
 AOS.init({ delay: 100, duration: 600, easing: "ease-out-cubic" });
