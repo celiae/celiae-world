@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="col">
-        <img width="200" src="@/assets/images/celiae.jpg" class="img-thumbnail rounded" alt="">
+        <img width="200" src="@/assets/images/celiae.jpg" class="img-fluid rounded" alt="">
       </div>
     </div>
   </div>
