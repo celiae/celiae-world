@@ -2,7 +2,7 @@
   <h1
     @mouseover="titleHover"
     @mouseout="titleHover"
-    class="bg-secondary p-2 bg-opacity-25 text-danger border-bottom border-primary border-5"
+    class="m-0 bg-secondary p-2 bg-opacity-25 text-warning border-bottom border-primary border-5"
   >
     <span v-show="show" class="itleText">{{ msg }}</span
     ><span class="titleIcon" v-show="!show">

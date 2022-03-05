@@ -20,25 +20,22 @@ export default defineComponent({
     return {
       cards: [
         {
-          imgPath: "@/assets/logo.svg",
           title: "Celiae Space",
-          content: "喜欢搞搞",
-          linkText: "GO",
+          content: "Celiae 的个人主页，也是你现在正在访问的网站",
+          linkText: "Celiae Space 源码",
           link: "https://github.com/celiae/celiae.github.io",
         },
         {
-          imgPath: "@/assets/blog/Github.svg",
           title: "JSP hr",
-          content: "主人的任务",
-          linkText: "GO",
+          content:
+            "很low的人事管理网站,大三上的课程设计,不喜欢jsp,所以暂停开发",
+          linkText: "JSP hr 源码",
           link: "https://github.com/celiae/JSP-",
         },
         {
-          //error with imgPath
-          imgPath: "",
           title: "Algorithm",
-          content: "额,这是什么",
-          linkText: "GO",
+          content: "准备罗列一些经典的算法，忘记的时候可以看看",
+          linkText: "经典算法(未完成)",
           link: "",
         },
       ],

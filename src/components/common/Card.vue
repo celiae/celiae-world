@@ -19,6 +19,9 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
+  data() {
+    return {};
+  },
   props: {
     title: String,
     content: String,

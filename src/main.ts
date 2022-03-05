@@ -1,6 +1,16 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+
+import "animate.css";
 import {
   faInfo,
   faHome,
@@ -23,16 +33,8 @@ import {
   faGithubAlt,
   faGithubSquare,
   faBloggerB,
+  faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-import "animate.css";
-
 library.add(
   faInfo,
   faHome,
@@ -51,7 +53,8 @@ library.add(
   faBloggerB,
   faTerminal,
   faHandHoldingHeart,
-  faHeart
+  faHeart,
+  faTiktok
 );
 
 AOS.init({ delay: 100, duration: 600, easing: "ease-out-cubic" });

@@ -1,13 +1,13 @@
 <template>
   <section
-    class="w-50 position-relative m-auto text-start ps-1 pe-1"
+    class="position-relative m-auto text-start ps-1 pe-1"
     @mouseover="overStyle"
     @mouseleave="hideClip()"
     @click="copy()"
     data-aos="zoom-in-up"
   >
     <div
-      class="m-auto mt-5 overflow-auto text-nowrap pt-4 pb-2 fs-3 border-top border-warning border-4"
+      class="m-auto overflow-auto text-nowrap pt-4 pb-2 fs-3 border-top border-warning border-4"
     >
       <font-awesome-icon
         class="align-middle fs-1 text-light me-2 animate__animated animate__flash animate__infinite"
@@ -76,6 +76,11 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 @import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+section {
+  background: $black;
+}
+
 @media screen and (min-width: 1000px) {
   .inner-shell {
     width: 50% !important;

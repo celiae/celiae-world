@@ -35,7 +35,7 @@
           <a
             href="https://github.com/celiae"
             class="nav-link border-bottom border-info"
-            >github<font-awesome-icon
+            >My Github<font-awesome-icon
               class="align-middle fs-1 ms-2"
               :icon="['fab', 'github-alt']"
           /></a>
