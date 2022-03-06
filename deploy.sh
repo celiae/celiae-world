@@ -23,6 +23,8 @@ cd dist
 # echo 'ceelia.v6.navy' > CNAME
 
 git init
+git config user.email="ceelia0g@gmail.com"
+git config user.name="Cheng Liang"
 git branch -m gh-pages
 git add -A
 git commit -m 'deploy'
