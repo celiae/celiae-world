@@ -12,8 +12,7 @@ git add -A
 git config user.email "ceelia0g@gmail.com"
 git config user.name "Cheng Liang"
 git commit -m 'source code'
-git push origin main
-# git push -f git@github.com:celiae/ceblog.git main
+git push -f git@github.com:celiae/celiae.github.io.git main
 
 # build
 yarn build
@@ -25,7 +24,6 @@ cd dist
 # echo 'ceelia.v6.navy' > CNAME
 
 git init
-git branch -m gh-pages
 git add -A
 git config user.email "ceelia0g@gmail.com"
 git config user.name "Cheng Liang"
@@ -35,6 +33,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:celiae/celiae.github.io.git gh-pages
+git push -f git@github.com:celiae/celiae.github.io.git master:gh-pages
 
 cd -
