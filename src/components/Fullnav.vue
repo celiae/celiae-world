@@ -4,10 +4,9 @@
       >&times;</a
     >
     <div class="overlay-content">
-      <a href="#celiae">Celiae Space</a>
-      <a href="#ceblog">Celiae Blog</a>
-      <a href="#github">Celiae Github</a>
-      <a href="#">Others</a>
+      <a :href="header.url" v-for="header in headers" :key="header.id">{{
+        header.title
+      }}</a>
     </div>
   </div>
   <Logo @click="openNav()"></Logo>
@@ -18,6 +17,28 @@ import { defineComponent } from "vue";
 import Logo from "@/components/common/Logo.vue";
 
 export default defineComponent({
+  data() {
+    return {
+      headers: [
+        {
+          title: "Celiae Space",
+          url: "#celiae",
+        },
+        {
+          title: "Celiae Blog",
+          url: "#ceblog",
+        },
+        {
+          title: "Celiae Github",
+          url: "#github",
+        },
+        {
+          title: "Others",
+          url: "#",
+        },
+      ],
+    };
+  },
   methods: {
     openNav() {
       document.getElementById("myNav").style.width = "100%";
