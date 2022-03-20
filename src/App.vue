@@ -65,7 +65,6 @@
       </div>
     </section>
 
-
     <Footer class="pt-4"></Footer>
   </div>
 </template>
@@ -88,7 +87,7 @@ export default {
     return {
       middlePageContent: {
         myRepository: "我的仓库",
-        pageOfCeliae: "Celiae 的 Github 主页",
+        // pageOfCeliae: "Celiae 的 Github 主页",
       },
       ceblog: {
         gclone: "git clone https://github.com/celiae/ceblog",
